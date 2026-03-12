@@ -5,6 +5,7 @@ const headers = {
   "x-api-key": "reqres_7ea932b1bc164317b00e9833822da3e2"
 };
 
+
 export const get = async (endpoint: string): Promise<AxiosResponse> => {
   const response = await axios.get(`${BASE_URL}${endpoint}`, { headers });
   return response;
